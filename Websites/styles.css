@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    color: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-image: url("image9.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.wrapper-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#whiteBlock,  #brownBlock1, #brownBlock2, #blackBlock{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+#whiteBlock{
+    margin-top: 25vh;
+    color: black;
+    width: 25vw;
+    height: 5vh;
+    background-color: white;
+
+    font-family:'Raleway';
+    font-size: 1.25rem;
+
+    margin-right: 20vh;
+}
+
+#brownBlock1{
+    width: 40vw;
+    height: 15vh;
+    
+    background-color: #D9B27C;
+}
+
+#text1, #text2 {
+    font-family: 'Playfair Display';
+    font-size: 15vh;
+    letter-spacing: 0.25vw;
+}
+
+#text1{
+    margin: 0 1vw 1vh 0;
+    font-weight: bold;
+}
+
+#text2{
+    margin-bottom: 1vh;
+
+    font-weight: bold;
+}
+
+#brownBlock2{
+    width: 45vw;
+    height: 20vh;
+    margin-left: 10vw;
+
+    background-color: #D9B27C;
+}
+
+#blackBlock{
+    width: 5vw;
+    height: 5vh;
+    margin-left: -25vw;
+
+    font-family: 'Questrial';
+    font-size: 3vh;
+    font-weight: bold;
+
+    background-color: black;
+}
+
+#whiteBlock > b{
+    color: black;
+    margin-left: 0.25rem;
+}
+
+.footer{
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+}
+
+#partners{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+#intel, #samsung, #play{
+    background-color: white;
+    height: 8vh;
+    width: 8vw;
+    margin-left: 2vw;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#partner-text{
+    font-family: 'Roboto';
+
+    height: 8vh;
+    width: 8vw;
+
+    margin-left: 50vw;
+    display: flex;
+    align-items: center;
+}
