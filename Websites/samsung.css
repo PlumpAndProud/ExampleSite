@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Right side */
+
+.picture {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("image2.png");
+
+    width: 70vw;
+}
+
+/* Left side */
+
+.light-purple-block {
+    background-color: #000D6F;
+    height: 100vh;
+    width: 30vw;
+
+    z-index: 0;
+}
+
+svg {
+    margin: 1.5cm 0 0 2cm;
+}
+
+.purple-block {
+    background-color: #1727A1;
+
+    margin-top: 3cm;
+    width: 35vw;
+    height: 15vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.text-1 {
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 6em;
+    font-weight: 700;
+
+    margin-left: 4cm;
+}
+
+.page-count {
+    font-family: "Questrial";
+    font-weight: 800;
+    color: white;
+    height: 2cm;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-big {
+    font-size: 2em;
+    margin: 1cm 0 0 -5cm;
+}
+
+.text-small{
+    margin: 0.5cm 0 0 0.5cm;
+}
+
+.white-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    background-color: white;
+
+    margin:2cm 4cm 0 4cm ;
+
+    height: 5vh;
+}
+
+.text-2{
+    color: #6330AB;
+    font-family: "Questrial";
+    font-weight: 700;
+}

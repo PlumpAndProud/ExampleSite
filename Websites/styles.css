@@ -23,7 +23,7 @@ svg{
 /*Main*/
 
 .main{
-    background-image: url("image9.png");
+    background-image: url("image.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -51,9 +51,14 @@ svg{
     background-color: white;
 
     font-family:'Raleway';
-    font-size: 1.25rem;
+    font-size: 1.25em;
 
     margin-right: 20vh;
+}
+
+#whiteBlock > b{
+    color: black;
+    margin-left: 0.25rem;
 }
 
 #brownBlock1{
@@ -65,8 +70,8 @@ svg{
 
 #text1, #text2 {
     font-family: 'Playfair Display';
-    font-size: 15vh;
-    letter-spacing: 0.25vw;
+    font-size: 9em;
+    letter-spacing: 0.04em;
 }
 
 #text1{
@@ -94,15 +99,10 @@ svg{
     margin-left: -25vw;
 
     font-family: 'Questrial';
-    font-size: 3vh;
+    font-size: 1.75em;
     font-weight: bold;
 
     background-color: black;
-}
-
-#whiteBlock > b{
-    color: black;
-    margin-left: 0.25rem;
 }
 
 /*Footer*/
@@ -143,6 +143,7 @@ ul{
 
 #partner-text{
     font-family: 'Roboto';
+    font-size: 1.25em;
 
     height: 8vh;
     width: 8vw;
