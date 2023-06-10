@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
+* {
     color: white;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
@@ -15,17 +15,20 @@ body{
 /* Hide scrollbar */
 
 body::-webkit-scrollbar {
-    display: none; /* Opera and Safari */
+    display: none;
+    /* Opera and Safari */
 }
 
 body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 /*Nav*/
 
-svg{
+svg {
     left: 52px;
     top: 44px;
     position: fixed;
@@ -34,27 +37,29 @@ svg{
 
 /*Main*/
 
-.main{
+.main {
     background-image: url("image.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 }
 
-.wrapper-column{
+.wrapper-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#whiteBlock{
+#whiteBlock {
     width: 413px;
     height: 47px;
+    margin-left: 41px;
+    ;
     background-color: white;
 
     font-family: 'Raleway';
@@ -65,14 +70,22 @@ svg{
     color: black;
 }
 
-#whiteBlock > .bold{
+#whiteBlock>.bold {
     font-weight: bold;
     color: black;
 }
 
-#brownBlock1{
+#brownBlock1 {
     width: 639px;
     height: 136px;
+
+    background-color: #D9B27C;
+}
+
+#brownBlock2 {
+    width: 705px;
+    height: 160px;
+    margin-left: 28px;
 
     background-color: #D9B27C;
 }
@@ -85,16 +98,10 @@ svg{
     line-height: 106.64%;
 }
 
-#brownBlock2{
-    width: 705px;
-    height: 160px;
-
-    background-color: #D9B27C;
-}
-
-#blackBlock{
+#blackBlock {
     width: 129px;
     height: 61px;
+    margin-left: 41px;
 
     font-family: 'Questrial';
     font-style: normal;
@@ -106,7 +113,7 @@ svg{
 
 /*Footer*/
 
-.footer{
+.footer {
     width: 100%;
     height: 3cm;
     position: absolute;
@@ -114,11 +121,11 @@ svg{
     z-index: 1;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-#partners{
+#partners {
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -129,7 +136,9 @@ ul{
     justify-content: center;
 }
 
-#intel, #samsung, #play{
+#intel,
+#samsung,
+#play {
     background-color: white;
     height: 2cm;
     width: 4cm;
@@ -141,7 +150,7 @@ ul{
     overflow: hidden;
 }
 
-#partner-text{
+#partner-text {
     font-family: 'Roboto';
     font-size: 1.25em;
 
@@ -215,23 +224,23 @@ ul{
     margin: 1cm 0 0 -5cm;
 }
 
-.text-small{
+.text-small {
     margin: 0.5cm 0 0 0.5cm;
 }
 
-.white-box{
+.white-box {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 
     background-color: white;
 
-    margin:2cm 4cm 0 4cm ;
+    margin: 2cm 4cm 0 4cm;
 
     height: 5vh;
 }
 
-.text-2{
+.text-2 {
     color: #6330AB;
     font-family: "Questrial";
     font-weight: 700;
@@ -239,19 +248,19 @@ ul{
 
 /* Custom overwriting for pages with names */
 
-.joanna-block{
+.joanna-block {
     width: 45vw;
 }
 
-.jt{
+.jt {
     background-image: url("imageJT.png");
 }
 
-.dawid-block{
+.dawid-block {
     width: 40vw;
 }
 
-.dk{
+.dk {
     background-image: url("imageDK.png");
 }
 
@@ -259,14 +268,14 @@ ul{
 
 } */
 
-.pg{
+.pg {
     background-image: url("imagePG.png");
 }
 
-.maciej-block{
+.maciej-block {
     width: 40vw;
 }
 
-.mg{
+.mg {
     background-image: url("imageMG.png");
 }
