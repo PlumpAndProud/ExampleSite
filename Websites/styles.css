@@ -59,7 +59,6 @@ svg {
     width: 413px;
     height: 47px;
     margin-left: 41px;
-    ;
     background-color: white;
 
     font-family: 'Raleway';
@@ -70,7 +69,7 @@ svg {
     color: black;
 }
 
-#whiteBlock>.bold {
+#whiteBlock > b {
     font-weight: bold;
     color: black;
 }
@@ -109,6 +108,12 @@ svg {
     font-size: 40px;
     line-height: 106.64%;
     background-color: black;
+}
+
+#whiteBlock, #brownBlock1,  #brownBlock2, #blackBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Footer*/
