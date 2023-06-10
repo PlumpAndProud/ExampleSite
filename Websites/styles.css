@@ -26,8 +26,8 @@ body {
 /*Nav*/
 
 svg{
-    margin: 1.5cm 0 0 2cm;
-    float: left;
+    left: 52px;
+    top: 44px;
     position: fixed;
     z-index: 1;
 }
