@@ -69,7 +69,7 @@ svg {
     color: black;
 }
 
-#whiteBlock > b {
+#whiteBlock>b {
     font-weight: bold;
     color: black;
 }
@@ -89,7 +89,8 @@ svg {
     background-color: #D9B27C;
 }
 
-#text1, #text2 {
+#text1,
+#text2 {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
@@ -110,7 +111,10 @@ svg {
     background-color: black;
 }
 
-#whiteBlock, #brownBlock1,  #brownBlock2, #blackBlock{
+#whiteBlock,
+#brownBlock1,
+#brownBlock2,
+#blackBlock {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,10 +128,6 @@ svg {
     position: absolute;
     bottom: 0;
     z-index: 1;
-}
-
-ul {
-    list-style-type: none;
 }
 
 #partners {
@@ -159,23 +159,30 @@ ul {
 
 #play {
     background: #48257B;
+    margin-left: 20.81px;
 }
 
-.play-img{
+#samsung {
+    margin-left: 20.81px;
+}
+
+.play-img {
     width: 80.73px;
     height: 26.56px;
 }
 
-#samsung{
+#samsung {
     background: #1529A2;
 }
 
-.samsung-img{
+.samsung-img {
     width: 108px;
     height: 35px;
 }
 
 #partner-text {
+    width: 112px;
+    height: 61px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
