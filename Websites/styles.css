@@ -144,26 +144,48 @@ ul {
 #intel,
 #samsung,
 #play {
-    background-color: white;
-    height: 2cm;
-    width: 4cm;
-    margin-left: 1cm;
+    width: 114.19px;
+    height: 61.08px;
+    border-radius: 2.65556px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+}
+
+#intel {
+    background: #0A60A5;
+}
+
+#play {
+    background: #48257B;
+}
+
+.play-img{
+    width: 80.73px;
+    height: 26.56px;
+}
+
+#samsung{
+    background: #1529A2;
+}
+
+.samsung-img{
+    width: 108px;
+    height: 35px;
 }
 
 #partner-text {
     font-family: 'Roboto';
-    font-size: 1.25em;
-
-    height: 8vh;
-    width: 8vw;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 100%;
 
     display: flex;
     align-items: center;
+
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 
 
