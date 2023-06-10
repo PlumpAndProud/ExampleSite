@@ -39,6 +39,10 @@ svg{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .wrapper-column{
@@ -48,72 +52,55 @@ svg{
     align-items: center;
 }
 
-#whiteBlock,  #brownBlock1, #brownBlock2, #blackBlock{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-}
-
-
 #whiteBlock{
-    margin-top: 25vh;
-    color: black;
-    width: 25vw;
-    height: 5vh;
+    width: 413px;
+    height: 47px;
     background-color: white;
 
-    font-family:'Raleway';
-    font-size: 1.25em;
-
-    margin-right: 20vh;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: black;
 }
 
-#whiteBlock > b{
+#whiteBlock > .bold{
+    font-weight: bold;
     color: black;
-    margin-left: 0.25rem;
 }
 
 #brownBlock1{
-    width: 40vw;
-    height: 15vh;
-    
+    width: 639px;
+    height: 136px;
+
     background-color: #D9B27C;
 }
 
 #text1, #text2 {
     font-family: 'Playfair Display';
-    font-size: 9em;
-    letter-spacing: 0.04em;
-}
-
-#text1{
-    margin: 0 1vw 1vh 0;
-    font-weight: bold;
-}
-
-#text2{
-    margin-bottom: 1vh;
-
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 106.64%;
 }
 
 #brownBlock2{
-    width: 45vw;
-    height: 20vh;
-    margin-left: 10vw;
+    width: 705px;
+    height: 160px;
 
     background-color: #D9B27C;
 }
 
 #blackBlock{
-    width: 5vw;
-    height: 5vh;
-    margin-left: -25vw;
+    width: 129px;
+    height: 61px;
 
     font-family: 'Questrial';
-    font-size: 1.75em;
-    font-weight: bold;
-
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 106.64%;
     background-color: black;
 }
 
