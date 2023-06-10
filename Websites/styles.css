@@ -12,12 +12,24 @@ body{
     padding: 0;
 }
 
+/* Hide scrollbar */
+
+body::-webkit-scrollbar {
+    display: none; /* Opera and Safari */
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 /*Nav*/
 
 svg{
     margin: 1.5cm 0 0 2cm;
     float: left;
     position: fixed;
+    z-index: 1;
 }
 
 /*Main*/
@@ -112,6 +124,7 @@ svg{
     height: 3cm;
     position: absolute;
     bottom: 0;
+    z-index: 1;
 }
 
 ul{
@@ -150,4 +163,123 @@ ul{
 
     display: flex;
     align-items: center;
+}
+
+
+/*  --------------------------------------    Second slide   ---------------------------------------------------  */
+
+.wrapper-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Right side */
+
+.picture {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 70vw;
+}
+
+/* Left side */
+
+.light-brown-block {
+    background-color: #EBCA9C;
+    height: 100vh;
+    width: 30vw;
+
+    z-index: 0;
+}
+
+.brown-block {
+    background-color: #D9B27C;
+
+    margin-top: 8cm;
+    width: 35vw;
+    height: 15vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.text-1 {
+    color: white;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 4.5em;
+
+    margin-left: 4cm;
+}
+
+.page-count {
+    font-family: "Questrial";
+    font-weight: 800;
+    color: white;
+    height: 2cm;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-big {
+    font-size: 2em;
+    margin: 1cm 0 0 -5cm;
+}
+
+.text-small{
+    margin: 0.5cm 0 0 0.5cm;
+}
+
+.white-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    background-color: white;
+
+    margin:2cm 4cm 0 4cm ;
+
+    height: 5vh;
+}
+
+.text-2{
+    color: #6330AB;
+    font-family: "Questrial";
+    font-weight: 700;
+}
+
+/* Custom overwriting for pages with names */
+
+.joanna-block{
+    width: 45vw;
+}
+
+.jt{
+    background-image: url("imageJT.png");
+}
+
+.dawid-block{
+    width: 40vw;
+}
+
+.dk{
+    background-image: url("imageDK.png");
+}
+
+/* .piotr-block{
+
+} */
+
+.pg{
+    background-image: url("imagePG.png");
+}
+
+.maciej-block{
+    width: 40vw;
+}
+
+.mg{
+    background-image: url("imageMG.png");
 }
