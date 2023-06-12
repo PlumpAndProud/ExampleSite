@@ -306,62 +306,64 @@ svg {
 
 /* Media query main page */
 
-@media screen and (max-width: 700px){
-    
+@media screen and (max-width: 700px) {
+
     /* Logo */
 
-    #whiteBlock{
+    #whiteBlock {
         width: 243px;
         height: 23px;
 
         font-style: normal;
-font-weight: 400;
-font-size: 10.13px;
-line-height: 12px;
+        font-weight: 400;
+        font-size: 10.13px;
+        line-height: 12px;
     }
 
-    #brownBlock1{
+    #brownBlock1 {
         width: 305.77px;
-        height: 65.08px; 
+        height: 65.08px;
     }
 
-    #brownBlock2{
+    #brownBlock2 {
         width: 337.35px;
         height: 76.56px;
     }
 
-    #text1, #text2{
+    #text1,
+    #text2 {
         font-style: normal;
-font-weight: 700;
-font-size: 57.4215px;
-line-height: 106.64%;
+        font-weight: 700;
+        font-size: 57.4215px;
+        line-height: 106.64%;
     }
 
-    #blackBlock{
+    #blackBlock {
         width: 61.73px;
         height: 29.19px;
 
         font-style: normal;
-font-weight: 800;
-font-size: 19.1405px;
-line-height: 106.64%;
+        font-weight: 800;
+        font-size: 19.1405px;
+        line-height: 106.64%;
     }
-    
-    
+
+
     /* Footer */
 
-    #partner-text{
+    #partner-text {
         display: none;
     }
 
-    #partners{
+    #partners {
         width: 100%;
         right: 0;
 
         align-items: center;
     }
 
-    #play, #samsung{
+    #play,
+    #samsung {
         margin-left: 13px;
     }
 
