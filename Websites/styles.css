@@ -119,16 +119,21 @@ svg {
 
 /*Footer*/
 
-#partners {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    z-index: 1;
-
+.partners-wrapper {
     right: 50px;
     bottom: 50px;
 
+    position: fixed;
+    z-index: 1;
+}
+
+#partners {
+    display: flex;
     justify-content: center;
+}
+
+.text-media {
+    display: none;
 }
 
 #intel,
@@ -355,10 +360,27 @@ svg {
         display: none;
     }
 
-    #partners {
+    .partners-wrapper {
         width: 100%;
         right: 0;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-media {
+        width: 219px;
+        height: 61px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 100%;
+
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 
