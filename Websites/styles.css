@@ -73,6 +73,7 @@ svg {
 #brownBlock1 {
     width: 639px;
     height: 136px;
+    padding: 10px 0 0 48px;
 
     background-color: #D9B27C;
 }
@@ -81,6 +82,7 @@ svg {
     width: 705px;
     height: 160px;
     margin-left: 28px;
+    padding: 0 0 0 20px;
 
     background-color: #D9B27C;
 }
@@ -92,6 +94,8 @@ svg {
     font-weight: 700;
     font-size: 120px;
     line-height: 106.64%;
+
+    width: 100%;
 }
 
 #blackBlock {
