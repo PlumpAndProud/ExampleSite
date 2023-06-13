@@ -51,6 +51,7 @@ svg {
     width: 413px;
     height: 47px;
     margin-left: 41px;
+    margin-bottom: -7px;
     background-color: white;
 
     font-family: 'Raleway';
@@ -59,6 +60,9 @@ svg {
     font-size: 17px;
     line-height: 20px;
     color: black;
+
+    position: relative;
+    z-index: 2;
 }
 
 #whiteBlock>b {
@@ -94,6 +98,7 @@ svg {
     width: 129px;
     height: 61px;
     margin-left: 41px;
+    margin-top: -8px;
 
     font-family: 'Questrial';
     font-style: normal;
@@ -101,6 +106,13 @@ svg {
     font-size: 40px;
     line-height: 106.64%;
     background-color: black;
+
+    position: relative;
+    z-index: 2;
+}
+
+.text-black{
+    margin: -2px 4px 0 0;
 }
 
 #whiteBlock,
