@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-
 body {
     margin: 0;
     padding: 0;
 }
-
 
 .wrapper-row {
     display: flex;
@@ -72,23 +68,23 @@ svg {
     margin: 1cm 0 0 -5cm;
 }
 
-.text-small{
+.text-small {
     margin: 0.5cm 0 0 0.5cm;
 }
 
-.white-box{
+.white-box {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 
     background-color: white;
 
-    margin:2cm 4cm 0 4cm ;
+    margin: 2cm 4cm 0 4cm;
 
     height: 5vh;
 }
 
-.text-2{
+.text-2 {
     color: #6330AB;
     font-family: "Questrial";
     font-weight: 700;
