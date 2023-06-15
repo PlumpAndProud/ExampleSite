@@ -6,9 +6,9 @@
 
 /* Hide scrollbar */
 
+/* Opera and Safari */
 body::-webkit-scrollbar {
     display: none;
-    /* Opera and Safari */
 }
 
 body {
@@ -115,7 +115,7 @@ svg {
     z-index: 2;
 }
 
-.text-black{
+.text-black {
     margin: -2px 4px 0 0;
 }
 
@@ -215,15 +215,15 @@ svg {
     background-repeat: no-repeat;
     background-size: cover;
 
-    width: 70vw;
+    width: 1240px;
 }
 
 /* Left side */
 
 .light-brown-block {
     background-color: #EBCA9C;
+    width: 660px;
     height: 100vh;
-    width: 30vw;
 
     z-index: 0;
 }
@@ -231,41 +231,50 @@ svg {
 .brown-block {
     background-color: #D9B27C;
 
-    margin-top: 8cm;
-    width: 35vw;
-    height: 15vh;
+    height: 184px;
+    margin-top: 240px;
 
     display: flex;
     align-items: center;
 }
 
 .text-1 {
-    color: white;
-    font-family: 'Playfair Display';
-    font-weight: 700;
-    font-size: 4.5em;
 
-    margin-left: 4cm;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 106.64%;
+
+    margin-left: 174px;
 }
 
 .page-count {
     font-family: "Questrial";
-    font-weight: 800;
-    color: white;
-    height: 2cm;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .text-big {
-    font-size: 2em;
-    margin: 1cm 0 0 -5cm;
+    width: 32.57px;
+    height: 36px;
+    margin: 39px 0 0 174px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 29.1429px;
+    line-height: 36px;
 }
 
 .text-small {
-    margin: 0.5cm 0 0 0.5cm;
+    width: 57px;
+    height: 39px;
+    margin: 42px 0 0 15.43px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17.1429px;
+    line-height: 21px;
 }
 
 .white-box {
@@ -275,21 +284,26 @@ svg {
 
     background-color: white;
 
-    margin: 2cm 4cm 0 4cm;
+    margin: 36px 0 0 174px;
 
-    height: 5vh;
+    height: 52px;
+    width: 235px;
 }
 
 .text-2 {
-    color: #6330AB;
+    color: #000;
     font-family: "Questrial";
-    font-weight: 700;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 100%;
+
 }
 
 /* Custom overwriting for pages with names */
 
 .joanna-block {
-    width: 45vw;
+    width: 1219px;
 }
 
 .jt {
@@ -297,23 +311,23 @@ svg {
 }
 
 .dawid-block {
-    width: 40vw;
+    width: 1095px;
 }
 
 .dk {
     background-image: url("imageDK.png");
 }
 
-/* .piotr-block{
-
-} */
+.piotr-block{
+    width: 991px;
+} 
 
 .pg {
     background-image: url("imagePG.png");
 }
 
 .maciej-block {
-    width: 40vw;
+    width: 1171px;
 }
 
 .mg {
