@@ -34,6 +34,7 @@ svg {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    background-position: center;
 
     display: flex;
     justify-content: center;
@@ -336,7 +337,9 @@ svg {
 
 /* Media query main page */
 
-@media screen and (max-width: 700px) {
+/* Mobile */
+
+@media screen and (max-width: 1050px) {
 
     /* Logo */
 
@@ -414,4 +417,65 @@ svg {
         margin-left: 13px;
     }
 
+    /* Second ... slide */
+
+    .light-brown-block {
+        width: 100vw;
+    }
+    
+    .brown-block {
+        width: 100vw;
+        height: auto;
+    }
+    
+    .text-1 {
+        font-size: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 25px;
+    }
+    
+    .page-count {
+        margin-left: 25px;
+        font-size: 20px;
+    }
+    
+    .text-big {
+        margin-left: 0;
+    }
+    
+    .white-box {
+        margin-left: 25px;
+        margin-top: 30px;
+        width: 200px;
+        height: 41px;
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 1700px) and (min-width:1050px) {
+    /* Second ... slide */
+
+    .light-brown-block {
+        width: 40%;
+    }
+    
+    .brown-block {
+        width: 115%;
+    }
+
+    .text-1{
+        margin-left: 8vw;
+        font-size: 5vw;
+    }
+
+    .page-count {
+        margin-left: 8vw;
+    }
+    
+    .white-box {
+
+    }
+     
 }
