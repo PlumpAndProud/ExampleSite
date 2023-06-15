@@ -470,8 +470,16 @@ svg {
         font-size: 5vw;
     }
 
+    .text-big{
+        margin-left: 0;
+    }
+
     .page-count {
         margin-left: 8vw;
+    }
+
+    .white-box{
+        margin-left: 5.5vw;
     }
      
 }
