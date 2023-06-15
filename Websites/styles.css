@@ -483,3 +483,13 @@ svg {
     }
      
 }
+
+@media screen and (min-width: 1901px){
+    .picture{
+        width:70%;
+    }
+
+    .light-brown-block{
+        width:30%;
+    }
+}
