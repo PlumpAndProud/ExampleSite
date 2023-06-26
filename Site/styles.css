@@ -76,7 +76,7 @@ svg {
     height: 136px;
     padding: 10px 0 0 48px;
 
-    background-color: #D9B27C;
+    background-color: #bc6c25;
 }
 
 #brownBlock2 {
@@ -85,7 +85,7 @@ svg {
     margin-left: 28px;
     padding: 0 0 0 20px;
 
-    background-color: #D9B27C;
+    background-color: #bc6c25;
 }
 
 #text1,
@@ -93,7 +93,7 @@ svg {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
-    font-size: 120px;
+    font-size: 110px;
     line-height: 106.64%;
 
     width: 100%;
@@ -222,7 +222,7 @@ svg {
 /* Left side */
 
 .light-brown-block {
-    background-color: #EBCA9C;
+    background-color: #dda15e;
     width: 660px;
     height: 100vh;
 
@@ -230,7 +230,7 @@ svg {
 }
 
 .brown-block {
-    background-color: #D9B27C;
+    background-color: #bc6c25;
 
     height: 184px;
     margin-top: 240px;
@@ -359,7 +359,7 @@ svg {
     }
 
     #brownBlock2 {
-        width: 337.35px;
+        width: 360px;
         height: 76.56px;
     }
 
