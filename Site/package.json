@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "fullpage.js": "^4.0.20"
+    "fullpage.js": "^4.0.20",
+    "jquery": "^3.7.0"
   },
   "name": "websites",
   "version": "1.0.0",
