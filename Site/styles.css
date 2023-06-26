@@ -326,7 +326,7 @@ svg {
 
 /* Mobile */
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1300px) {
 
     /* Logo */
 
@@ -411,7 +411,7 @@ svg {
     }
 
     .brown-block {
-        width: 100vw;
+        width: 100vw !important;
         height: auto;
     }
 
@@ -441,7 +441,7 @@ svg {
 
 }
 
-@media screen and (max-width: 1700px) and (min-width:1050px) {
+@media screen and (max-width: 1700px) and (min-width:1300px) {
     /* Second ... slide */
 
     .light-brown-block {
