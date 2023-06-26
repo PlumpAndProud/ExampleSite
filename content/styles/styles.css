@@ -33,7 +33,7 @@ svg {
 /*Main*/
 
 .main {
-    background-image: url("content/images/imgBackground.jpg");
+    background-image: url("../images/imgBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -307,19 +307,19 @@ svg {
 
 
 .first-block-bg {
-    background-image: url("content/images/imgForest.jpg");
+    background-image: url("../images/imgForest.jpg");
 }
 
 .second-block-bg {
-    background-image: url("content/images/imgLeaves.png");
+    background-image: url("../images/imgLeaves.png");
 }
 
 .third-block-bg {
-    background-image: url("content/images/imgRose.png");
+    background-image: url("../images/imgRose.png");
 }
 
 .fourth-block-bg {
-    background-image: url("content/images/imgStones.png");
+    background-image: url("../images/imgStones.png");
 }
 
 /* Media query main page */
