@@ -246,7 +246,6 @@ svg {
 
     font-family: 'Inconsolata';
     font-style: normal;
-    font-weight: 700;
     font-size: 120px;
     line-height: 106.64%;
 
@@ -304,37 +303,22 @@ svg {
 
 }
 
-/* Custom overwriting for pages with names */
+/* Backgrounds for pages with names  */
 
-.joanna-block {
-    width: 1219px;
-}
 
-.jt {
+.first-block-bg {
     background-image: url("content/images/imgForest.jpg");
 }
 
-.dawid-block {
-    width: 1095px;
-}
-
-.dk {
+.second-block-bg {
     background-image: url("content/images/imgLeaves.png");
 }
 
-.piotr-block {
-    width: 991px;
-}
-
-.pg {
+.third-block-bg {
     background-image: url("content/images/imgRose.png");
 }
 
-.maciej-block {
-    width: 1171px;
-}
-
-.mg {
+.fourth-block-bg {
     background-image: url("content/images/imgStones.png");
 }
 
@@ -465,7 +449,7 @@ svg {
     }
 
     .brown-block {
-        width: 115%;
+        width: 115% !important;
     }
 
     .text-1 {
