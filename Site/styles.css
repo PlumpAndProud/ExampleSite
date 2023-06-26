@@ -30,7 +30,7 @@ svg {
 /*Main*/
 
 .main {
-    background-image: url("image.png");
+    background-image: url("content/images/imgBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -308,7 +308,7 @@ svg {
 }
 
 .jt {
-    background-image: url("imageJT.png");
+    background-image: url("content/images/imgForest.jpg");
 }
 
 .dawid-block {
@@ -316,15 +316,15 @@ svg {
 }
 
 .dk {
-    background-image: url("imageDK.png");
+    background-image: url("content/images/imgLeaves.png");
 }
 
-.piotr-block{
+.piotr-block {
     width: 991px;
-} 
+}
 
 .pg {
-    background-image: url("imagePG.png");
+    background-image: url("content/images/imgRose.png");
 }
 
 .maciej-block {
@@ -332,7 +332,7 @@ svg {
 }
 
 .mg {
-    background-image: url("imageMG.png");
+    background-image: url("content/images/imgStones.png");
 }
 
 /* Media query main page */
@@ -422,28 +422,28 @@ svg {
     .light-brown-block {
         width: 100vw;
     }
-    
+
     .brown-block {
         width: 100vw;
         height: auto;
     }
-    
+
     .text-1 {
         font-size: 50px;
         padding-top: 20px;
         padding-bottom: 20px;
         margin-left: 25px;
     }
-    
+
     .page-count {
         margin-left: 25px;
         font-size: 20px;
     }
-    
+
     .text-big {
         margin-left: 0;
     }
-    
+
     .white-box {
         margin-left: 25px;
         margin-top: 30px;
@@ -451,7 +451,7 @@ svg {
         height: 41px;
         font-size: 14px;
     }
-    
+
 }
 
 @media screen and (max-width: 1700px) and (min-width:1050px) {
@@ -460,17 +460,17 @@ svg {
     .light-brown-block {
         width: 40%;
     }
-    
+
     .brown-block {
         width: 115%;
     }
 
-    .text-1{
+    .text-1 {
         margin-left: 8vw;
         font-size: 5vw;
     }
 
-    .text-big{
+    .text-big {
         margin-left: 0;
     }
 
@@ -478,18 +478,18 @@ svg {
         margin-left: 8vw;
     }
 
-    .white-box{
+    .white-box {
         margin-left: 5.5vw;
     }
-     
+
 }
 
-@media screen and (min-width: 1901px){
-    .picture{
-        width:70%;
+@media screen and (min-width: 1901px) {
+    .picture {
+        width: 70%;
     }
 
-    .light-brown-block{
-        width:30%;
+    .light-brown-block {
+        width: 30%;
     }
 }
