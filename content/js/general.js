@@ -85,14 +85,18 @@ function changePlaceholder(i) {
 document.querySelector("#button-change-all").addEventListener("click", () => {
     if (input1.value != '') {
         document.querySelector('.' + textTable[0]).innerHTML = input1.value;
+        changePlaceholder(input1);
     }
     if (input2.value != '') {
         document.querySelector('.' + textTable[1]).innerHTML = input2.value;
+        changePlaceholder(input2);
     }
     if (input3.value != '') {
         document.querySelector('.' + textTable[2]).innerHTML = input3.value;
+        changePlaceholder(input3);
     }
     if (input4.value != '') {
         document.querySelector('.' + textTable[3]).innerHTML = input4.value;
+        changePlaceholder(input4);
     }
 })
