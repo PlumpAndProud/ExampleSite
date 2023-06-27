@@ -1,6 +1,6 @@
-let blockTable = ['.first-block', '.second-block', '.third-block', '.fourth-block'];
-let textTable = ['first-text', 'second-text', 'third-text', 'fourth-text'];
-let inputTable = ['#input-first', '#input-second', '#input-third', '#input-fourth'];
+const blockTable = ['.first-block', '.second-block', '.third-block', '.fourth-block'];
+const textTable = ['first-text', 'second-text', 'third-text', 'fourth-text'];
+const inputTable = ['#input-first', '#input-second', '#input-third', '#input-fourth'];
 
 // API handler
 
@@ -35,3 +35,54 @@ function setWidth() {
 
 }
 
+//input handler (onlick, change text)
+
+const buttonTable = ['#change-first', '#change-second', '#change-third', '#change-fourth'];
+
+const input1 = document.querySelector(inputTable[0]);
+const input2 = document.querySelector(inputTable[1]);
+const input3 = document.querySelector(inputTable[2]);
+const input4 = document.querySelector(inputTable[3]);
+
+
+document.querySelector(buttonTable[0]).addEventListener("click", () => {
+    if (input1.value != '') {
+        document.querySelector('.' + textTable[0]).innerHTML = input1.value;
+    }
+})
+
+document.querySelector(buttonTable[1]).addEventListener("click", () => {
+    if (input2.value != '') {
+        document.querySelector('.' + textTable[1]).innerHTML = input2.value;
+    }
+})
+
+document.querySelector(buttonTable[2]).addEventListener("click", () => {
+    if (input3.value != '') {
+        document.querySelector('.' + textTable[2]).innerHTML = input3.value;
+    }
+})
+
+document.querySelector(buttonTable[3]).addEventListener("click", () => {
+    if (input4.value != '') {
+        document.querySelector('.' + textTable[3]).innerHTML = input4.value;
+    }
+})
+
+
+//button change all
+
+document.querySelector("#button-change-all").addEventListener("click", () => {
+    if (input1.value != '') {
+        document.querySelector('.' + textTable[0]).innerHTML = input1.value;
+    }
+    if (input2.value != '') {
+        document.querySelector('.' + textTable[1]).innerHTML = input2.value;
+    }
+    if (input3.value != '') {
+        document.querySelector('.' + textTable[2]).innerHTML = input3.value;
+    }
+    if (input4.value != '') {
+        document.querySelector('.' + textTable[3]).innerHTML = input4.value;
+    }
+})

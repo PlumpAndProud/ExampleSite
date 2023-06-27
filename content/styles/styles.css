@@ -390,6 +390,15 @@ svg {
     height: 29px;
 }
 
+.button-change:hover,
+.button-change-wide:hover {
+    color: white;
+    background-color: #bc6c25;
+
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
 /* Media query main page */
 
 /* Mobile */
