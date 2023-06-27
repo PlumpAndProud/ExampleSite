@@ -338,6 +338,58 @@ svg {
     background-image: url("../images/imgBackgroundChange.jpg")
 }
 
+.text-change,
+.name-change,
+.button-change {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.text-change {
+    margin: 10px 10px 10px 10px;
+}
+
+.name-change {
+    color: black;
+
+    width: auto;
+    height: 25px;
+}
+
+.button-change,
+.button-change-wide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-change {
+
+    color: black;
+    background-color: white;
+    margin-left: 15px;
+
+    width: 80px;
+}
+
+.button-change-wide {
+    background-color: white;
+    color: black;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+
+    margin: 25px 0 0 0;
+    width: 200px;
+    height: 29px;
+}
+
 /* Media query main page */
 
 /* Mobile */
