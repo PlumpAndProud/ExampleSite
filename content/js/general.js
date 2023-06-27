@@ -1,6 +1,8 @@
 let blockTable = ['.first-block', '.second-block', '.third-block', '.fourth-block'];
 let textTable = ['first-text', 'second-text', 'third-text', 'fourth-text'];
 
+// API handler
+
 $.ajax({
     url: 'https://randomuser.me/api/?results=4&inc=name',
     dataType: 'json',
@@ -15,6 +17,7 @@ $.ajax({
     }
 });
 
+//brown-box width
 
 function setWidth() {
 

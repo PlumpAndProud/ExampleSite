@@ -75,9 +75,9 @@ svg {
 }
 
 #brownBlock1 {
-    width: 639px;
+    width: 439px;
     height: 136px;
-    padding: 10px 0 0 48px;
+    padding: 10px 0 0 68px;
 
     background-color: #bc6c25;
 }
@@ -86,7 +86,7 @@ svg {
     width: 705px;
     height: 160px;
     margin-left: 28px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 40px;
 
     background-color: #bc6c25;
 }
@@ -320,6 +320,22 @@ svg {
 
 .fourth-block-bg {
     background-image: url("../images/imgStones.png");
+}
+
+/* 5th page */
+
+#background-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+    background-image: url("../images/imgBackgroundChange.jpg")
 }
 
 /* Media query main page */
