@@ -48,27 +48,37 @@ const input4 = document.querySelector(inputTable[3]);
 document.querySelector(buttonTable[0]).addEventListener("click", () => {
     if (input1.value != '') {
         document.querySelector('.' + textTable[0]).innerHTML = input1.value;
+        changePlaceholder(input1);
     }
 })
 
 document.querySelector(buttonTable[1]).addEventListener("click", () => {
     if (input2.value != '') {
         document.querySelector('.' + textTable[1]).innerHTML = input2.value;
+        changePlaceholder(input2);
     }
 })
 
 document.querySelector(buttonTable[2]).addEventListener("click", () => {
     if (input3.value != '') {
         document.querySelector('.' + textTable[2]).innerHTML = input3.value;
+        changePlaceholder(input3);
     }
 })
 
 document.querySelector(buttonTable[3]).addEventListener("click", () => {
     if (input4.value != '') {
         document.querySelector('.' + textTable[3]).innerHTML = input4.value;
+        changePlaceholder(input4);
     }
 })
 
+//takes in reference to input block, changes its placeholder and zeroes text
+
+function changePlaceholder(i) {
+    i.placeholder = i.value;
+    i.value = '';
+}
 
 //button change all
 
