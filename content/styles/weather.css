@@ -92,6 +92,8 @@ input {
     background-color: transparent;
     border: none;
     outline: none;
+    width: 25vw;
+    overflow: hidden;
 
     margin: 65px 0 15px 0;
 }
