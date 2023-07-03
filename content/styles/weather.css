@@ -1,0 +1,67 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide scrollbar */
+
+/* Opera and Safari */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body {
+    background-image: url('../images/sunset.jpg');
+}
+
+/* nav */
+
+svg {
+    left: 52px;
+    top: 44px;
+    position: fixed;
+
+    width: 50px;
+    height: 50px;
+}
+
+/* main */
+
+.wrapper-column,
+.wrapper-row {
+    display: flex;
+}
+
+.wrapper-column {
+    flex-direction: column;
+}
+
+.wrapper-row {
+    flex-direction: row;
+}
+
+.general,
+.detailed {
+    height: 100vh;
+}
+
+/* Left side */
+
+.general {
+    width: 60vw;
+}
+
+/* Right side */
+
+.detailed {
+    width: 40vw;
+    backdrop-filter: blur(10px);
+}
