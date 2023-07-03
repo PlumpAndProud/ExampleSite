@@ -2,6 +2,12 @@
     color: white;
     margin: 0;
     padding: 0;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
 }
 
 /* Hide scrollbar */
@@ -42,6 +48,9 @@ svg {
 
 .wrapper-column {
     flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper-row {
@@ -61,9 +70,18 @@ svg {
 
 /* Right side */
 
+hr {
+    width: 30vw;
+    opacity: 0.35;
+}
+
 .detailed {
     width: 40vw;
     backdrop-filter: blur(10px);
+}
+
+.search-block {
+    height: 15vh;
 }
 
 input {
@@ -71,4 +89,30 @@ input {
     background-color: transparent;
     border: none;
     outline: none;
+
+    margin: 65px 0 15px 0;
+}
+
+.find-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+hr.search-line {
+    width: 25vw;
+    margin-right: 100px;
+}
+
+
+
+
+
+
+.details-block {
+    height: 60vh;
 }
