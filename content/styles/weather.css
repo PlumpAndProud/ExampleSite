@@ -65,3 +65,10 @@ svg {
     width: 40vw;
     backdrop-filter: blur(10px);
 }
+
+input {
+    cursor: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
