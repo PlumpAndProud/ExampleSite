@@ -27,6 +27,8 @@ body {
 
 body {
     background-image: url('../images/sunset1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* nav */
