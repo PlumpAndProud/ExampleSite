@@ -15,9 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
 
-    <!-- Scripts(CDN) -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
 </head>
 
 <body>
@@ -78,7 +75,7 @@
 
         </div>
 
-        <div class="app">
+        <div id="app">
 
             <div class="detailed">
 
@@ -86,20 +83,17 @@
 
                     <div class="search-block">
 
-                        <input type="text" id="location" placeholder="Your Location (WORK IN PROGRESS)">
+                        <input type="text" id="location" placeholder="Your Location (WORK IN PROGRESS)"
+                            v-model="location">
                         <hr class="search-line">
-                        <div class="find-button"></div>
+                        <button class="find-button" @click="addToHistory"></button>
 
                     </div>
 
                     <div class="history-block">
 
-                        <div class="history-header">History</div>
-
-                        <div class="history-header">History</div>
-                        <div class="history-header">History</div>
-                        <div class="history-header">History</div>
-                        <div class="history-header">History</div>
+                        <div class="history-header">History:</div>
+                        <div class="history-content" v-for="item in items" v-bind:key="item.id">{{item.title}}</div>
 
                     </div>
 
@@ -148,6 +142,8 @@
 
     </div>
 
+    <!-- Scripts(CDN, custom scripts) -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
     <script src="content/js/weatherVue.js"></script>
 </body>
 

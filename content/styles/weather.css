@@ -156,9 +156,14 @@ hr.search-line {
     width: 30vw;
 }
 
-.history-header {
+.history-header,
+.history-content {
 
     margin: 0 0 25px 0;
+}
+
+.history-content {
+    opacity: 0.5;
 }
 
 .hr-last {
