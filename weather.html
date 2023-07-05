@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <!-- Scripts(CDN) -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 </head>
 
 <body>
@@ -51,82 +55,92 @@
 
             </div>
 
-            <div class="temperature">
+            <div class="left-grid left-wrapper">
 
-                16°
+                <div class="temperature"> 16°</div>
 
-            </div>
+                <div class="wrapper-column">
 
-            <div class="location">
+                    <div class="location"> London </div>
+                    <div class="date"> 05:09 - Monday, 9 Sep '23 </div>
 
-                London
+                </div>
 
-            </div>
+                <div class="wrapper-column">
 
-            <div class="date">
+                    <img src="" alt="image" class="image">
+                    <div class="status"> Cloudy </div>
 
-                05:09 - Monday, 9 Sep '23
+                </div>
 
-            </div>
-
-            <div class="status">
-
-                Cloudy
 
             </div>
 
         </div>
 
-        <div class="detailed">
+        <div class="app">
 
-            <div class="wrapper-column">
+            <div class="detailed">
 
-                <div class="search-block">
+                <div class="wrapper-column">
 
-                    <input type="text" id="location" placeholder="Your Location (WORK IN PROGRESS)">
-                    <hr class="search-line">
-                    <div class="find-button"></div>
+                    <div class="search-block">
+
+                        <input type="text" id="location" placeholder="Your Location (WORK IN PROGRESS)">
+                        <hr class="search-line">
+                        <div class="find-button"></div>
+
+                    </div>
+
+                    <div class="history-block">
+
+                        <div class="history-header">History</div>
+
+                        <div class="history-header">History</div>
+                        <div class="history-header">History</div>
+                        <div class="history-header">History</div>
+                        <div class="history-header">History</div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="details-block">
+
+                        <div class="details-text">
+                            Weather Details
+                        </div>
+
+                        <div class="info">
+
+                            <div class="text">Cloudy</div>
+                            <div class="numbers">89%</div>
+
+                        </div>
+
+                        <div class="info">
+
+                            <div class="text">Humidity</div>
+                            <div class="numbers">52%</div>
+
+                        </div>
+
+                        <div class="info">
+
+                            <div class="text">Wind</div>
+                            <div class="numbers">8km/h</div>
+
+                        </div>
+
+                    </div>
+
+                    <hr class="hr-last">
+
+                    <div class="multiple-day-forecast">
+
+                    </div>
 
                 </div>
-
-                <div class="history-block">
-
-                    <div class="history-header">History</div>
-
-                </div>
-
-                <hr>
-
-                <div class="details-block">
-
-                    <div class="details-text">
-                        Weather Details
-                    </div>
-
-                    <div class="info">
-
-                        <div class="text">Cloudy</div>
-                        <div class="numbers">89%</div>
-
-                    </div>
-
-                    <div class="info">
-
-                        <div class="text">Humidity</div>
-                        <div class="numbers">52%</div>
-
-                    </div>
-
-                    <div class="info">
-
-                        <div class="text">Wind</div>
-                        <div class="numbers">8km/h</div>
-
-                    </div>
-
-                </div>
-
-                <hr>
 
             </div>
 
