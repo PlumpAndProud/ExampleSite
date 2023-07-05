@@ -5,14 +5,32 @@ new Vue({
         items: [],
         historyCounter: 0,
         api: null,
+        data: []
     },
     methods: {
-        apiCall() {
-            axios
-                .get(`http://api.weatherapi.com/v1/current.json?key=f38bf32f03504e5c822110641230507&q=${this.location}&aqi=no`)
-                .then(response => this.api = response)
-                .catch(error => console.log(error));
+        async apiCall() {
+            try {
+                let response = await axios.get(`http://api.weatherapi.com/v1/current.json?key=f38bf32f03504e5c822110641230507&q=${this.location}&aqi=no`)
+                this.api = response.data;
+                console.log(this.api);
+            }
+            catch (error) {
+                alert("Incorrect name")
+            }
+
+            this.data = [
+                `${this.api.current.temp_c}`,
+                `${this.api.location.name}`,
+                `${this.api.current.last_updated}`,
+                `${this.api.current.condition.icon}`,
+                `${this.api.current.condition.text}`,
+                `${this.api.current.cloud}`,
+                `${this.api.current.humidity}`,
+                `${this.api.current.gust_kph}`,
+
+            ]
         },
+
         addToHistory() {
             if (this.historyCounter < 5) {
                 this.items.unshift({ title: this.location, id: Math.random() })
@@ -25,6 +43,7 @@ new Vue({
             }
 
         },
+
         searchAgain(name) {
             this.location = name
         }
