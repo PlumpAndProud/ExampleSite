@@ -54,7 +54,7 @@
 
             <div class="left-grid left-wrapper">
 
-                <div class="temperature"> 16°</div>
+                <div class="temperature" v-html="api.data.current.temp_c"></div>
 
                 <div class="wrapper-column">
 
@@ -86,15 +86,17 @@
                         <input type="text" id="location" placeholder="Your Location (WORK IN PROGRESS)"
                             v-model="location">
                         <hr class="search-line">
-                        <button class="find-button" @click="addToHistory"></button>
+                        <button class="find-button" @click="apiCall(); addToHistory();"></button>
 
                     </div>
 
                     <div class="history-block">
 
                         <div class="history-header">History:</div>
-                        <div class="history-content" v-for="item in items" v-bind:key="item.id">{{item.title}}</div>
-
+                        <div class="history-content" v-for="item in items" v-bind:key="item.id"
+                            @click="searchAgain(item.title)">
+                            {{item.title}}
+                        </div>
                     </div>
 
                     <hr>
@@ -142,8 +144,11 @@
 
     </div>
 
+    </div>
+
     <!-- Scripts(CDN, custom scripts) -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="content/js/weatherVue.js"></script>
 </body>
 

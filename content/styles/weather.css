@@ -164,6 +164,11 @@ hr.search-line {
 
 .history-content {
     opacity: 0.5;
+    overflow: hidden;
+}
+
+.history-content:hover {
+    cursor: pointer;
 }
 
 .hr-last {
