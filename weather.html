@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="content/styles/weather.css">
     <title>Document</title>
 
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
     <!-- Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,7 +74,6 @@
 
                     </div>
 
-
                 </div>
 
             </div>
@@ -84,8 +85,7 @@
 
                     <div class="search-block">
 
-                        <input type="text" id="location" placeholder="Your Location (WORK IN PROGRESS)"
-                            v-model="location">
+                        <input type="text" id="location" placeholder="Your Location" v-model="location">
                         <hr class="search-line">
                         <button class="find-button" @click="apiCall(); addToHistory();"></button>
 

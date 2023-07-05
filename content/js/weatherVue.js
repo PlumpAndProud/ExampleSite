@@ -10,7 +10,7 @@ new Vue({
     methods: {
         async apiCall() {
             try {
-                let response = await axios.get(`http://api.weatherapi.com/v1/current.json?key=f38bf32f03504e5c822110641230507&q=${this.location}&aqi=no`)
+                let response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=f38bf32f03504e5c822110641230507&q=${this.location}&aqi=no`)
                 this.api = response.data;
                 console.log(this.api);
             }
