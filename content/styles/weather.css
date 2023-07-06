@@ -148,6 +148,12 @@ input {
     background-color: orange;
 }
 
+img {
+    height: 70px;
+    opacity: 0.9;
+    z-index: 2;
+}
+
 hr.search-line {
     width: 25vw;
     margin-right: 5vw;

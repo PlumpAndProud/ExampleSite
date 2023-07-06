@@ -15,48 +15,52 @@ new Vue({
     },
     methods: {
         async apiCall() {
-            try {
-                let response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=f38bf32f03504e5c822110641230507&q=${this.location}&aqi=no`)
-                this.api = response.data;
-            } catch (error) {
-                alert("Incorrect name" + e)
+            if (this.location != '') {
+                try {
+                    let response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=f38bf32f03504e5c822110641230507&q=${this.location}&aqi=no`)
+                    this.api = response.data;
+                } catch (e) {
+                    alert(e.message + ' ' + e.code)
+                }
+
+                this.data = [
+                    `${this.api.current.temp_c}`,
+                    `${this.api.location.name}`,
+                    `${this.api.current.last_updated}`,
+                    `${this.api.current.condition.icon}`,
+                    `${this.api.current.condition.text}`,
+                    `${this.api.current.cloud}`,
+                    `${this.api.current.humidity}`,
+                    `${this.api.current.gust_kph}`
+                ]
             }
-
-            this.data = [
-                `${this.api.current.temp_c}`,
-                `${this.api.location.name}`,
-                `${this.api.current.last_updated}`,
-                `${this.api.current.condition.icon}`,
-                `${this.api.current.condition.text}`,
-                `${this.api.current.cloud}`,
-                `${this.api.current.humidity}`,
-                `${this.api.current.gust_kph}`,
-
-            ]
         },
 
         async apiCallForecast() {
-            try {
-                let response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=f38bf32f03504e5c822110641230507q=${this.location}&days=3`)
-                this.apiForecast = response.data
-            } catch (e) {
-                alert(e.message + ' ' + e.code)
-            }
+            if (this.location != '') {
+                try {
+                    let response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=f38bf32f03504e5c822110641230507q=${this.location}&days=3`)
+                    this.apiForecast = response.data
+                } catch (e) {
+                    alert(e.message + ' ' + e.code)
+                }
 
-            // this.dataForecast
+                // this.dataForecast
+            }
         },
 
         addToHistory() {
-            if (this.historyCounter < 5) {
-                this.items.unshift({ title: this.location, id: Math.random() })
-                this.historyCounter++
-                this.location = ''
-            } else {
-                this.items.pop()
-                this.items.unshift({ title: this.location, id: Math.random() })
-                this.location = ''
+            if (this.location != '') {
+                if (this.historyCounter < 5) {
+                    this.items.unshift({ title: this.location, id: Math.random() })
+                    this.historyCounter++
+                    this.location = ''
+                } else {
+                    this.items.pop()
+                    this.items.unshift({ title: this.location, id: Math.random() })
+                    this.location = ''
+                }
             }
-
         },
 
         searchAgain(name) {
@@ -80,8 +84,7 @@ new Vue({
             `${this.api.current.condition.text}`,
             `${this.api.current.cloud}`,
             `${this.api.current.humidity}`,
-            `${this.api.current.gust_kph}`,
-
+            `${this.api.current.gust_kph}`
         ]
 
         try {
@@ -92,7 +95,4 @@ new Vue({
             alert(e.message + ' ' + e.code)
         }
     },
-
-
-
 })

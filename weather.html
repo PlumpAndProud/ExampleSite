@@ -88,7 +88,9 @@
                         <input type="text" id="location" placeholder="Your Location" v-model="location"
                             v-on:keyup.enter="apiCall(); addToHistory();">
                         <hr class="search-line">
-                        <button class="find-button" @click="apiCall(); addToHistory();"></button>
+                        <button class="find-button" @click="apiCall(); addToHistory();">
+                            <img src="content/images/search.png" alt="search">
+                        </button>
 
                     </div>
 
