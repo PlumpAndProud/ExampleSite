@@ -5,17 +5,21 @@ new Vue({
         items: [],
         historyCounter: 0,
         api: null,
-        data: []
+        apiForecast: null,
+        data: [],
+        dataForecast: [
+            {},
+            {},
+            {}
+        ],
     },
     methods: {
         async apiCall() {
             try {
                 let response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=f38bf32f03504e5c822110641230507&q=${this.location}&aqi=no`)
                 this.api = response.data;
-                console.log(this.api);
-            }
-            catch (error) {
-                alert("Incorrect name")
+            } catch (error) {
+                alert("Incorrect name" + e)
             }
 
             this.data = [
@@ -29,6 +33,17 @@ new Vue({
                 `${this.api.current.gust_kph}`,
 
             ]
+        },
+
+        async apiCallForecast() {
+            try {
+                let response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=f38bf32f03504e5c822110641230507q=${this.location}&days=3`)
+                this.apiForecast = response.data
+            } catch (e) {
+                alert(e.message + ' ' + e.code)
+            }
+
+            // this.dataForecast
         },
 
         addToHistory() {
@@ -52,10 +67,9 @@ new Vue({
         try {
             let response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=f38bf32f03504e5c822110641230507&q=Gliwice&aqi=no`)
             this.api = response.data;
-            console.log(this.api);
         }
         catch (error) {
-            alert("Incorrect name")
+            alert(e.message + ' ' + e.code)
         }
 
         this.data = [
@@ -69,5 +83,16 @@ new Vue({
             `${this.api.current.gust_kph}`,
 
         ]
-    }
+
+        try {
+            let response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=f38bf32f03504e5c822110641230507&q=Gliwice&days=3&aqi=no`)
+            this.apiForecast = response.data
+            console.log(this.apiForecast);
+        } catch (e) {
+            alert(e.message + ' ' + e.code)
+        }
+    },
+
+
+
 })
