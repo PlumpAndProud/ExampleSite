@@ -58,7 +58,7 @@
 
                 <div class="left-grid left-wrapper">
 
-                    <div class="temperature">{{data[0]}}°</div>
+                    <div class="temperature">{{data[0]}}°C</div>
 
                     <div class="wrapper-column">
 
@@ -137,9 +137,85 @@
                     <hr class="hr-last">
 
                     <div class="multiple-day-forecast">
-                        <div class="v-line left"></div>
-                        <div class="v-line center"></div>
-                        <div class="v-line right"></div>
+
+                        <div class="v-line left">
+
+                            <div class="forecast-data">
+                                {{dataForecast[0].date}}
+                            </div>
+                            <img v-bind:src="dataForecast[0].icon" alt="weather icon" class="forecast-icon">
+                            <div class="forecast-temp">
+
+                                <div class="wrapper-column">
+
+                                    <div class="wrapper-row bottom">
+                                        <div class="text-left">Max.</div>
+                                        <div class="number">{{dataForecast[0].maxtemp}}°C</div>
+                                    </div>
+
+                                    <div class="wrapper-row bottom">
+                                        <div class="text-left"> Min.</div>
+                                        <div class="number">{{dataForecast[0].mintemp}}°C</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="v-line center">
+
+                            <div class="forecast-data">
+                                {{dataForecast[1].date}}
+                            </div>
+                            <img v-bind:src="dataForecast[1].icon" alt="weather icon" class="forecast-icon">
+                            <div class="forecast-temp">
+
+                                <div class="wrapper-column">
+
+                                    <div class="wrapper-row bottom">
+                                        <div class="text-left">Max.</div>
+                                        <div class="number">{{dataForecast[1].maxtemp}}°C</div>
+                                    </div>
+
+                                    <div class="wrapper-row bottom">
+                                        <div class="text-left"> Min.</div>
+                                        <div class="number">{{dataForecast[1].mintemp}}°C</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="v-line right">
+
+                            <div class="forecast-data">
+                                {{dataForecast[2].date}}
+                            </div>
+                            <img v-bind:src="dataForecast[2].icon" alt="weather icon" class="forecast-icon">
+                            <div class="forecast-temp">
+
+                                <div class="wrapper-column">
+
+                                    <div class="wrapper-row bottom">
+                                        <div class="text-left">Max.</div>
+                                        <div class="number">{{dataForecast[2].maxtemp}}°C</div>
+                                    </div>
+
+                                    <div class="wrapper-row bottom">
+                                        <div class="text-left"> Min.</div>
+                                        <div class="number">{{dataForecast[2].mintemp}}°C</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
