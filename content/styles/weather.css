@@ -211,3 +211,27 @@ hr.search-line {
 
     justify-content: flex-end;
 }
+
+.multiple-day-forecast {
+    display: grid;
+    width: 30vw;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Vertical lines */
+
+.v-line {
+    margin-top: 30px;
+    height: 10vh;
+    opacity: 0.5;
+}
+
+.v-line.left,
+.v-line.center {
+    border-left: 1px solid white;
+}
+
+.v-line.right,
+.v-line.center {
+    border-right: 1px solid white;
+}
