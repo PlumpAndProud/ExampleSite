@@ -5,7 +5,6 @@ new Vue({
         items: [],
         historyCounter: 0,
         api: null,
-        apiForecast: null,
         data: [],
         dataForecast: [
             {},
@@ -17,8 +16,8 @@ new Vue({
         async apiCall() {
             if (this.location != '') {
                 try {
-                    let response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=f38bf32f03504e5c822110641230507&q=${this.location}&aqi=no`)
-                    this.api = response.data;
+                    let response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=f38bf32f03504e5c822110641230507q=${this.location}&days=3&aqi=no`)
+                    this.api = response.data
                 } catch (e) {
                     alert(e.message + ' ' + e.code)
                 }
@@ -33,18 +32,6 @@ new Vue({
                     `${this.api.current.humidity}`,
                     `${this.api.current.gust_kph}`
                 ]
-            }
-        },
-
-        async apiCallForecast() {
-            if (this.location != '') {
-                try {
-                    let response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=f38bf32f03504e5c822110641230507q=${this.location}&days=3`)
-                    this.apiForecast = response.data
-                } catch (e) {
-                    alert(e.message + ' ' + e.code)
-                }
-
                 // this.dataForecast
             }
         },
@@ -69,10 +56,9 @@ new Vue({
     },
     mounted: async function () {
         try {
-            let response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=f38bf32f03504e5c822110641230507&q=Gliwice&aqi=no`)
-            this.api = response.data;
-        }
-        catch (error) {
+            let response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=f38bf32f03504e5c822110641230507&q=Gliwice&days=3&aqi=no`)
+            this.api = response.data
+        } catch (e) {
             alert(e.message + ' ' + e.code)
         }
 
@@ -86,13 +72,5 @@ new Vue({
             `${this.api.current.humidity}`,
             `${this.api.current.gust_kph}`
         ]
-
-        try {
-            let response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=f38bf32f03504e5c822110641230507&q=Gliwice&days=3&aqi=no`)
-            this.apiForecast = response.data
-            console.log(this.apiForecast);
-        } catch (e) {
-            alert(e.message + ' ' + e.code)
-        }
     },
 })
