@@ -105,6 +105,10 @@ svg {
     height: 3vh;
 }
 
+.date {
+    text-align: center;
+}
+
 /* Right side */
 
 /* Search section */

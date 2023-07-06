@@ -63,7 +63,7 @@
                     <div class="wrapper-column">
 
                         <div class="location"> {{data[1]}} </div>
-                        <div class="date"> {{data[2]}} </div>
+                        <div class="date">Data from: <br> {{data[2]}} </div>
 
                     </div>
 
@@ -85,7 +85,8 @@
 
                     <div class="search-block">
 
-                        <input type="text" id="location" placeholder="Your Location" v-model="location">
+                        <input type="text" id="location" placeholder="Your Location" v-model="location"
+                            v-on:keyup.enter="apiCall(); addToHistory();">
                         <hr class="search-line">
                         <button class="find-button" @click="apiCall(); addToHistory();"></button>
 
@@ -110,8 +111,8 @@
 
                         <div class="info">
 
-                            <div class="text">Cloudy</div>
-                            <div class="numbers">{{data[5]}}</div>
+                            <div class="text">Cloudiness</div>
+                            <div class="numbers">{{data[5]}}%</div>
 
                         </div>
 
@@ -124,7 +125,7 @@
 
                         <div class="info">
 
-                            <div class="text">Wind</div>
+                            <div class="text">Wind speed</div>
                             <div class="numbers">{{data[7]}}km/h</div>
 
                         </div>
